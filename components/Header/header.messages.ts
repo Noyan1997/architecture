@@ -14,5 +14,11 @@ const headerMessage = defineMessages({
     id: `${scope}.contact`,
     defaultMessage: 'contact',
   },
+  SORA: {
+    id: `${scope}.SORA`,
+    defaultMessage: 'SORA',
+  },
 })
 export default headerMessage
+
+// Architecturee

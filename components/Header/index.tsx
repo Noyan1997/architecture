@@ -5,24 +5,41 @@ import headerMessage from './header.messages'
 
 const Header: NextPage = () => {
   return (
-    <div>
-      <IntlProvider locale="en">
+    <IntlProvider locale="en">
+      <ul
+        class=" w-full justify-center flex flex-col my-8
+       "
+      >
         <div>
-          <span>Architecture</span>
+          <li class="mr-6 justify-center flex">
+            <a
+              class="text-blue-500 hover:text-blue-800 font-semibold text-7xl"
+              href="#"
+            >
+              <FormattedMessage {...headerMessage.SORA} />
+            </a>
+          </li>
         </div>
-        <div>
-          <span>
-            <FormattedMessage {...headerMessage.work} />
-          </span>
-          <span>
-            <FormattedMessage {...headerMessage.about} />
-          </span>
-          <span>
-            <FormattedMessage {...headerMessage.contact} />
-          </span>
+
+        <div class="flex justify-center">
+          <li class="mr-6">
+            <a class="text-blue-500 hover:text-blue-800" href="#">
+              <FormattedMessage {...headerMessage.work} />
+            </a>
+          </li>
+          <li class="mr-6">
+            <a class="text-blue-500 hover:text-blue-800" href="about">
+              <FormattedMessage {...headerMessage.about} />
+            </a>
+          </li>
+          <li class="mr-6">
+            <a class="text-blue-500 hover:text-blue-800" href="contact">
+              <FormattedMessage {...headerMessage.contact} />
+            </a>
+          </li>
         </div>
-      </IntlProvider>
-    </div>
+      </ul>
+    </IntlProvider>
   )
 }
 

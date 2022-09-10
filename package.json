@@ -6,20 +6,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "extract": "formatjs extract",
+    "compile": "formatjs compile"
   },
   "dependencies": {
     "next": "12.2.5",
+    "next-intl": "^2.7.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intl": "^6.1.1"
   },
   "devDependencies": {
+    "@formatjs/cli": "^5.1.0",
     "@types/node": "18.7.15",
     "@types/react": "18.0.18",
     "@types/react-dom": "18.0.6",
+    "autoprefixer": "^9.8.8",
     "eslint": "8.23.0",
     "eslint-config-next": "12.2.5",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
     "typescript": "4.8.2"
   }
 }
