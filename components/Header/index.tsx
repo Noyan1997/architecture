@@ -7,13 +7,13 @@ const Header: NextPage = () => {
   return (
     <IntlProvider locale="en">
       <ul
-        class=" w-full justify-center flex flex-col my-8
+        className=" w-full justify-center flex flex-col my-8
        "
       >
         <div>
-          <li class="mr-6 justify-center flex">
+          <li className="mr-6 justify-center flex">
             <a
-              class="text-blue-500 hover:text-blue-800 font-semibold text-7xl"
+              className="text-blue-500 hover:text-blue-800 font-semibold text-7xl"
               href="#"
             >
               <FormattedMessage {...headerMessage.SORA} />
@@ -21,19 +21,19 @@ const Header: NextPage = () => {
           </li>
         </div>
 
-        <div class="flex justify-center">
-          <li class="mr-6">
-            <a class="text-blue-500 hover:text-blue-800" href="#">
+        <div className="flex justify-center">
+          <li className="mr-6">
+            <a className="text-blue-500 hover:text-blue-800" href="#">
               <FormattedMessage {...headerMessage.work} />
             </a>
           </li>
-          <li class="mr-6">
-            <a class="text-blue-500 hover:text-blue-800" href="about">
+          <li className="mr-6">
+            <a className="text-blue-500 hover:text-blue-800" href="about">
               <FormattedMessage {...headerMessage.about} />
             </a>
           </li>
-          <li class="mr-6">
-            <a class="text-blue-500 hover:text-blue-800" href="contact">
+          <li className="mr-6">
+            <a className="text-blue-500 hover:text-blue-800" href="contact">
               <FormattedMessage {...headerMessage.contact} />
             </a>
           </li>
