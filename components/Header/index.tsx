@@ -14,7 +14,7 @@ const Header: NextPage = () => {
           <li className="mr-6 justify-center flex">
             <a
               className="text-blue-500 hover:text-blue-800 font-semibold text-7xl"
-              href="#"
+              href="/"
             >
               <FormattedMessage {...headerMessage.SORA} />
             </a>
@@ -23,7 +23,7 @@ const Header: NextPage = () => {
 
         <div className="flex justify-center">
           <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="#">
+            <a className="text-blue-500 hover:text-blue-800" href="work">
               <FormattedMessage {...headerMessage.work} />
             </a>
           </li>
