@@ -1,275 +1,139 @@
 export const data = [
   {
     className: 'row-1',
+    id: 'slide-1',
     images: [
       {
-        id: 1,
-        image: require('../public/images/test.jpg'),
+        id: 'aaa-1',
+        image: '/images/test.jpg',
       },
     ],
   },
   {
     className: 'row-2',
+    id: 'slide-2',
+
     images: [
       {
-        id: 2,
-        image: require('../public/images/test5.jpg'),
+        id: 'aaa-2',
+        image: '/images/test5.jpg',
       },
     ],
   },
   {
     className: 'row-3',
+    id: 'slide-3',
+
     images: [
       {
-        id: 3,
-        image: require('../public/images/test.jpg'),
+        id: 'aaa-3',
+        image: '/images/test.jpg',
       },
     ],
   },
 
   {
     className: 'row-4',
+    id: 'slide-4',
+
     images: [
       {
-        id: 4,
-        image: require('../public/images/test9.jpg'),
+        id: 'aaa-4',
+        image: '/images/test9.jpg',
       },
     ],
   },
 
   {
+    id: 'slide-5',
     className: 'row-5',
     images: [
       {
-        id: 5,
-        image: require('../public/images/test8.jpg'),
+        id: 'aaa-5',
+        image: '/images/test8.jpg',
       },
     ],
   },
 
   {
     className: 'row-6',
+    id: 'slide-6',
     images: [
       {
-        id: 6,
-        image: require('../public/images/test7.jpg'),
+        id: 'aaa-6',
+        image: '/images/test7.jpg',
       },
     ],
   },
 
   {
     className: 'row-7',
+    id: 'slide-7',
+
     images: [
       {
-        id: 7,
-        image: require('../public/images/test11.jpg'),
+        id: 'aaa-7',
+        image: '/images/test11.jpg',
       },
     ],
   },
 
   {
     className: 'row-8',
+    id: 'slide-8',
+
     images: [
       {
-        id: 8,
-        image: require('../public/images/test4.jpg'),
+        id: 'aaa-8',
+        image: '/images/test4.jpg',
       },
     ],
   },
 
   {
     className: 'row-9',
+    id: 'slide-9',
+
     images: [
       {
-        id: 9,
-        image: require('../public/images/test3.jpg'),
+        id: 'aaa-9',
+        image: '/images/test3.jpg',
       },
     ],
   },
 
   {
     className: 'row-10',
+    id: 'slide-10',
+
     images: [
       {
-        id: 10,
-        image: require('../public/images/test2.jpg'),
+        id: '1aaa-0',
+        image: '/images/test2.jpg',
       },
     ],
   },
 
   {
     className: 'row-11',
+    id: 'slide-11',
+
     images: [
       {
-        id: 11,
-        image: require('../public/images/test10.jpg'),
+        id: '1aaa-1',
+        image: '/images/test10.jpg',
       },
     ],
   },
   {
     className: 'row-12',
+    id: 'slide-12',
+
     images: [
       {
-        id: 12,
-        image: require('../public/images/test10.jpg'),
+        id: 'aaa-12',
+        image: '/images/test3.jpg',
       },
     ],
   },
-
-  // {
-  //   className: 'row-13',
-  //   images: [
-  //     {
-  //       id: 13,
-  //       image: require('../public/images/test11.jpg'),
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   className: 'row-14',
-  //   images: [
-  //     {
-  //       id: 14,
-  //       image: require('../public/images/test10.jpg'),
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   className: 'row-15',
-  //   images: [
-  //     {
-  //       id: 15,
-  //       image: require('../public/images/test15.jpg'),
-  //     },
-  //   ],
-  // },
-
-  // {
-  //   className: 'row-16',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-17',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-18',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-20',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-21',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-22',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-23',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-24',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-25',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-26',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-27',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-28',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-29',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
-  // {
-  //   className: 'row-29',
-  //   images: [
-  //     {
-  //       id: 1,
-  //       image: require('../public/images/test16.jpg'),
-  //     },
-  //   ],
-  // },
 ]
