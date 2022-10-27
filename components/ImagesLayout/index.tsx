@@ -6,12 +6,12 @@ import Modal from '../Modal/modal'
 const ImageLayout: NextPage = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [selectedId, setSelectedId] = useState<string>('')
-  // const [imageSrc, setImageSrc] = useState('')
   const findImageBySelectedId = useCallback(
     (_selectedId: string) =>
       data.flatMap((_row) =>
         _row.images.filter((_imagesArray) => _imagesArray.id === _selectedId)
       ),
+
     []
   )
 
@@ -48,11 +48,19 @@ const ImageLayout: NextPage = () => {
 
     return (
       <Modal open={isOpen} onClose={() => setIsOpen(false)}>
-        <div>
+        <div className="slider_contents">
+          <div className="arrow_wrapper" onClick={showPrevious}>
+            <i className="arrow left"></i>
+          </div>
+
           <Image src={_currentImage?.[0]?.image} height="600px" width="600px" />
+          <div className="arrow_wrapper" onClick={showNext}>
+            <i className="arrow right"></i>
+          </div>
         </div>
-        <button onClick={showNext}>Next</button>
-        <button onClick={showPrevious}>Previous</button>
+        <div className="image_name_container">
+          <span>{_currentImage?.[0]?.name}</span>
+        </div>
       </Modal>
     )
   }, [isOpen, showNext, selectedId, findImageBySelectedId])

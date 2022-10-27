@@ -6,17 +6,18 @@ export const data = [
       {
         id: 'aaa-1',
         image: '/images/test.jpg',
+        name: 'textOne',
       },
     ],
   },
   {
     className: 'row-2',
     id: 'slide-2',
-
     images: [
       {
         id: 'aaa-2',
         image: '/images/test5.jpg',
+        name: 'textTwo',
       },
     ],
   },
@@ -28,6 +29,7 @@ export const data = [
       {
         id: 'aaa-3',
         image: '/images/test.jpg',
+        name: 'textThree',
       },
     ],
   },
@@ -40,6 +42,7 @@ export const data = [
       {
         id: 'aaa-4',
         image: '/images/test9.jpg',
+        name: 'textfour',
       },
     ],
   },
@@ -51,6 +54,7 @@ export const data = [
       {
         id: 'aaa-5',
         image: '/images/test8.jpg',
+        name: 'textfive',
       },
     ],
   },
@@ -62,6 +66,7 @@ export const data = [
       {
         id: 'aaa-6',
         image: '/images/test7.jpg',
+        name: 'textsix',
       },
     ],
   },
@@ -74,6 +79,7 @@ export const data = [
       {
         id: 'aaa-7',
         image: '/images/test11.jpg',
+        name: 'textseven',
       },
     ],
   },
@@ -86,6 +92,7 @@ export const data = [
       {
         id: 'aaa-8',
         image: '/images/test4.jpg',
+        name: 'texteight',
       },
     ],
   },
@@ -98,6 +105,7 @@ export const data = [
       {
         id: 'aaa-9',
         image: '/images/test3.jpg',
+        name: 'textnine',
       },
     ],
   },
@@ -110,6 +118,7 @@ export const data = [
       {
         id: '1aaa-0',
         image: '/images/test2.jpg',
+        name: 'textten',
       },
     ],
   },
@@ -122,6 +131,7 @@ export const data = [
       {
         id: '1aaa-1',
         image: '/images/test10.jpg',
+        name: 'texteleven',
       },
     ],
   },
@@ -133,6 +143,7 @@ export const data = [
       {
         id: 'aaa-12',
         image: '/images/test3.jpg',
+        name: 'texttwelve',
       },
     ],
   },
