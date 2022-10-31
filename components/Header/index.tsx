@@ -2,7 +2,6 @@ import { NextPage } from 'next'
 import React from 'react'
 import { FormattedMessage, IntlProvider } from 'react-intl'
 import headerMessage from './header.messages'
-
 const Header: NextPage = () => {
   return (
     <IntlProvider locale="en">
@@ -23,17 +22,17 @@ const Header: NextPage = () => {
 
         <div className="flex justify-center">
           <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="work">
+            <a className="text-blue-500 hover:text-blue-800" href="/">
               <FormattedMessage {...headerMessage.work} />
             </a>
           </li>
           <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="about">
+            <a className="text-blue-500 hover:text-blue-800" href="/aboutUs">
               <FormattedMessage {...headerMessage.about} />
             </a>
           </li>
           <li className="mr-6">
-            <a className="text-blue-500 hover:text-blue-800" href="contact">
+            <a className="text-blue-500 hover:text-blue-800" href="/contact">
               <FormattedMessage {...headerMessage.contact} />
             </a>
           </li>
