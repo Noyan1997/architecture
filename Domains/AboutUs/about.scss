@@ -15,3 +15,15 @@
     min-width: none !important;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .about_us_parent {
+    span {
+      width: 298px;
+    }
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}

@@ -85,12 +85,13 @@
     span {
       text-align: center;
       font-size: 20px !important;
+      color: rgb(232 222 222 / 20%);
     }
   }
 }
 @media screen and (max-width: 1024px) {
   .image_gride_container {
-    --num-cols: 2;
-    --row-height: 200px;
+    display: flex;
+    flex-direction: column;
   }
 }

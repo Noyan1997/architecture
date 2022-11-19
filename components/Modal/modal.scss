@@ -36,3 +36,13 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .modal_overlay {
+    .modal_wrapper {
+      .modal {
+        width: 100%;
+      }
+    }
+  }
+}

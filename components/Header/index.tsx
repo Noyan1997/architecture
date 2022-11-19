@@ -10,7 +10,7 @@ const Header: NextPage = () => {
        "
       >
         <div>
-          <li className="mr-6 justify-center flex">
+          <li className=" justify-center flex">
             <a
               className="text-blue-500 hover:text-blue-800 font-semibold text-7xl"
               href="/"
@@ -20,7 +20,7 @@ const Header: NextPage = () => {
           </li>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center ml-5">
           <li className="mr-6">
             <a className="text-blue-500 hover:text-blue-800" href="/">
               <FormattedMessage {...headerMessage.work} />
