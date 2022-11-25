@@ -68,9 +68,10 @@ const ImageLayout: NextPage = () => {
   return (
     <div className="image_gride_container">
       {data.map((row) => (
-        <div className={`arch_img ${row.className}`}>
+        <div key={row.id} className={`arch_img ${row.className}`}>
           {row.images.map((src) => (
             <Image
+              key={row.id}
               src={src.image}
               height="600px"
               width="600px"
