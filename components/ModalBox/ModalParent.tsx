@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import React from 'react'
 import { IModal } from '../../interface/global'
 
-const Modal: NextPage<IModal> = ({ children, open, onClose }) => {
+const ModalParent: NextPage<IModal> = ({ children, open, onClose }) => {
   if (!open) return null
   return (
     <>
@@ -19,4 +19,4 @@ const Modal: NextPage<IModal> = ({ children, open, onClose }) => {
     </>
   )
 }
-export default Modal
+export default ModalParent

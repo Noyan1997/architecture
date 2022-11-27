@@ -2,7 +2,7 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import React, { useCallback, useMemo, useState } from 'react'
 import { data } from '../../images/images'
-import Modal from '../Modal/modal'
+import ModalParent from '../ModalBox/ModalParent'
 const ImageLayout: NextPage = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const [selectedId, setSelectedId] = useState<string>('')
@@ -47,7 +47,7 @@ const ImageLayout: NextPage = () => {
     const _currentImage = findImageBySelectedId(selectedId)
 
     return (
-      <Modal open={isOpen} onClose={() => setIsOpen(false)}>
+      <ModalParent open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="slider_contents">
           <div className="arrow_wrapper" onClick={showPrevious}>
             <i className="arrow left"></i>
@@ -58,10 +58,11 @@ const ImageLayout: NextPage = () => {
             <i className="arrow right"></i>
           </div>
         </div>
+
         <div className="image_name_container">
           <span>{_currentImage?.[0]?.name}</span>
         </div>
-      </Modal>
+      </ModalParent>
     )
   }, [isOpen, showNext, selectedId, findImageBySelectedId])
 
