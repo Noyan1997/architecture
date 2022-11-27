@@ -6,7 +6,7 @@ import { modalAction } from "../../store/actions";
 import "./modalBox.scss";
 import * as ModalContent from "./ModalContent"
 const ModalBox: React.FunctionComponent = () => {
-  // const { modalType } = useSelector((state) => state.modal)
+  // const { modalType } = useSelector((state) => state.modal);
 
   const generateModalContent = (
     type: modalAction.ModalType
