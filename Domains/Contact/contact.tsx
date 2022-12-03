@@ -5,9 +5,9 @@ const AboutUs = () => {
     <>
       <Header />
       <div className="contact_parent">
-        <div>
-          <span>Viktor Fretyán</span>
-          <span>Tamás Medve</span>
+        <div className='persons_parent'>
+          <span className='f-row'>Viktor Fretyán</span>
+          <span className='s-row'>Tamás Medve</span>
         </div>
         <div className="our_info">
           <span>info@sora-images.com</span>

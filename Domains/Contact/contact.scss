@@ -1,11 +1,19 @@
 .contact_parent {
-  :nth-child(1),
-  :nth-child(2) {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .persons_parent{
     display: flex;
     flex-direction: column;
+    
   }
+
   .our_info {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
   }
 
   width: 100%;
@@ -14,7 +22,7 @@
   flex-direction: column;
   span {
     color: #000;
-    width: 485px;
+    // width: 485px;
     text-align: center;
   }
 }
