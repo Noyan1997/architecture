@@ -19,19 +19,20 @@
 
     .modal {
       z-index: 100;
-      // background: white;
       position: relative;
       margin: 1.75rem auto;
       border-radius: 3px;
       width: 80%;
-      // height: 50%;
       padding: 2rem;
       .close_btn_area {
-        width: 13px;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         cursor: pointer;
+
+        .modal_dismis{
+          width: 0!important;
+        }
       }
     }
   }
@@ -42,6 +43,12 @@
     .modal_wrapper {
       .modal {
         width: 100%;
+        padding: 0;
+        .close_btn_area{
+          display: flex;
+          justify-content: flex-end;
+          width: 359px;
+        }
       }
     }
   }

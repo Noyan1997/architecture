@@ -30,10 +30,8 @@ const ImageLayout: NextPage = () => {
     }
   }, [setIsOpen, findImageBySelectedId, selectedId])
 
-  const showPrevious = useCallback(() => {
+  const showPrevious = useCallback((e:any) => {
     const _currentIndex = imagesIdArray.indexOf(selectedId)
-    console.log({ _currentIndex })
-    // the last one item
     if (_currentIndex === 0) {
       null
       //
@@ -49,12 +47,12 @@ const ImageLayout: NextPage = () => {
     return (
       <ModalParent open={isOpen} onClose={() => setIsOpen(false)}>
         <div className="slider_contents">
-          <div className="arrow_wrapper" onClick={showPrevious}>
+          <div className="arrow_wrapper r_left" onClick={showPrevious}>
             <i className="arrow left"></i>
           </div>
 
           <Image src={_currentImage?.[0]?.image} height="600px" width="600px" />
-          <div className="arrow_wrapper" onClick={showNext}>
+          <div className="arrow_wrapper r_right" onClick={showNext}>
             <i className="arrow right"></i>
           </div>
         </div>
