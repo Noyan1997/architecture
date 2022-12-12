@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <>
 
-<Layout>
+<Layout title={t('home')}>
 
     <HeaderT/>
     <Header />
