@@ -1,16 +1,19 @@
 import Header from '../../components/Header'
-// import './about.scss'
+import HeaderT from '../../components/HeaderT'
+
+import useTranslation from '../../hooks/useTranslation';
 const AboutUs = () => {
+  const { t, locale } = useTranslation();
+
   return (
     <>
+    <HeaderT/>
+
       <Header />
       <div className="about_us_parent">
-        <span>
-          We at Sora are devoted to the craft of producing images that capture
-          the beauty of architecture. They are created to be in harmony with the
-          existing surroundings, without employing tricks, and ensuring that the
-          architecture takes center stage.
-        </span>
+       
+        <p>{t('aboutUs')}</p>
+
         <img src="/images/test3.jpg" />
       </div>
     </>

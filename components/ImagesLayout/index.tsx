@@ -51,7 +51,7 @@ const ImageLayout: NextPage = () => {
             <i className="arrow left"></i>
           </div>
 
-          <Image src={_currentImage?.[0]?.image} height="600px" width="600px" />
+          <Image alt='' src={_currentImage?.[0]?.image} height="600px" width="600px" />
           <div className="arrow_wrapper r_right" onClick={showNext}>
             <i className="arrow right"></i>
           </div>

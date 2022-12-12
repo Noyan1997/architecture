@@ -1,11 +1,15 @@
 import { NextPage } from 'next'
 import Link from 'next/link'
 import React from 'react'
-import { FormattedMessage, IntlProvider } from 'react-intl'
-import headerMessage from './header.messages'
+import { IntlProvider } from 'react-intl'
+import Image from 'next/image'
+import useTranslation from '../../hooks/useTranslation'
+
 const Header: NextPage = () => {
+  const { t, locale } = useTranslation();
+
   return (
-    <IntlProvider locale="en">
+    <>
       <ul
         className=" w-full justify-center flex flex-col my-8
        "
@@ -13,8 +17,11 @@ const Header: NextPage = () => {
         <div>
           <li className=" justify-center flex">
             <Link href="/">
-              <a className="text-blue-500 hover:text-blue-800 font-semibold text-7xl">
-                <FormattedMessage {...headerMessage.SORA} />
+              <a className="header_item font-semibold text-7xl">
+          <Image alt='' src='/images/rah-logo.svg'
+          height="200px" width="200px" 
+          /> 
+          
               </a>
             </Link>
           </li>
@@ -23,28 +30,33 @@ const Header: NextPage = () => {
         <div className="flex justify-center ml-5">
           <li className="mr-6">
             <Link href="/">
-              <a className="text-blue-500 hover:text-blue-800">
-                <FormattedMessage {...headerMessage.work} />
+              <a className="header_item">
+          <p>{t('work')}</p>
+
               </a>
             </Link>
           </li>
           <li className="mr-6">
             <Link href="/aboutUs">
-              <a className="text-blue-500 hover:text-blue-800">
-                <FormattedMessage {...headerMessage.about} />
+              <a className="header_item">
+          <p>{t('about')}</p>
+
               </a>
             </Link>
           </li>
           <li className="mr-6">
             <Link href="/contact">
-              <a className="text-blue-500 hover:text-blue-800">
-                <FormattedMessage {...headerMessage.contact} />
+              <a className="header_item">
+          <p>{t('contact')}</p>
+
               </a>
             </Link>
           </li>
+
         </div>
       </ul>
-    </IntlProvider>
+      </>
+     
   )
 }
 

@@ -1,8 +1,12 @@
+import HeaderT from '../../components/HeaderT'
 import Header from '../../components/Header'
+
 // import './about.scss'
 const AboutUs = () => {
   return (
     <>
+    <HeaderT/>
+
       <Header />
       <div className="contact_parent">
         <div className='persons_parent'>
