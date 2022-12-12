@@ -14,7 +14,7 @@ export default function useTranslation() {
     if (!LangStrings[locale][key]) {
       console.warn(`No string '${key}' for locale '${locale}'`);
     }
-
+//@ts-ignore
     return LangStrings[locale][key] || LangStrings[defaultLocale][key] || '';
   }
 

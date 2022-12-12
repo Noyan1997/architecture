@@ -32,6 +32,7 @@ export default function Post({ postData }: PostProps) {
 }
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  //@ts-ignore
   const postData = await getContentData(`/${params.lang}/${params.id}`);
 
   return {
